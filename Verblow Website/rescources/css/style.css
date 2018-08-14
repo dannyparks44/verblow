@@ -1,0 +1,222 @@
+/*
+
+    Orange Color: #ffba00
+    Blue Color: #3498db
+    
+    
+*/
+
+/*--------------------------------------------------------*/
+/*---   BASIC SETUP   ------------------------------------*/
+/*--------------------------------------------------------*/
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    
+    background-color: #fff;
+    color: #fff;
+    font-family: 'lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    
+    
+}
+
+/*--------------------------------------------------------*/
+/*---   REUSABLE COMPONENTS   ----------------------------*/
+/*--------------------------------------------------------*/
+
+.row {
+    max-width: 1140;
+    margin: 0 auto; /* This is same as margin: 0(top) auto(left) 0(bottom) auto(right) */
+    
+}
+
+/* --- HEADINGS --- */
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: fff;
+    font-size: 320%; /* This means it will be 200% of the base size (20px)*/
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+/* In the link and visited lines, we are declaring that the button will look the same after we visited it, and specifying which state's propertey's we are declaring*/
+
+/* --- BUTTONS --- */
+
+.btn:link,
+.btn:visited {
+    
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    
+    margin-right: 15px;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+.btn:hover,
+.btn:active {
+    
+    background-color: #2487c9;
+    border-color: #2487c9;
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}
+
+/*--------------------------------------------------------*/
+/*---   HEADER   -----------------------------------------*/
+/*--------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/panorama-2117310%20copy.jpg); /* Background image! */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+     
+}
+
+.tagline-text-box{
+    position: absolute;
+    width: 1140;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves Box after it has been moved by previous line*/
+    
+}
+
+.logo {
+    margin-top: 10px;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+.main-nav {
+    background-color: #3498db;
+    margin-top: 0px;
+    width: 100%;
+    float: right;
+    list-style: none;
+    
+}
+
+.main-nav li{
+    float: right;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+        
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    
+    border-bottom: 2px solid #ffba00;
+    
+}
+
+.last {
+    margin-right: 20px;
+}
+
+/*--------------------------------------------------------*/
+/*---   Crypto Prices   ----------------------------------*/
+/*--------------------------------------------------------*/
+ 
+.bitcoin-price {
+    margin-top: -5%;
+    margin-left: 10%;
+    background-color: #ffba00;
+    width: 18%;
+    height: 185px;
+    border-radius: 20px;
+    
+    
+}
+
+.bitcoin-price h1 {
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 20px;
+    
+}
+
+.bitcoin-price h2 {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+
+.bitcoin-price h3 {
+    margin-left: 10%;
+    color: #87ff2f;
+}
+
+.bitcoin-price a {
+    
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 8px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #ffba00;
+    
+}
